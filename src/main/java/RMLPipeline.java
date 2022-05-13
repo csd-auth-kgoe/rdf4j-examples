@@ -17,6 +17,9 @@ import java.util.Map;
 
 public class RMLPipeline {
 
+    /**
+     * Using the RMLMapper together with the graphdb: perform a mapping (airports) and load the results in graphdb
+     */
     public static void main(String[] args) throws IOException {
         RMLPipeline pipeline = new RMLPipeline();
 

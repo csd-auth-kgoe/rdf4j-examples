@@ -5,7 +5,10 @@ import org.eclipse.rdf4j.model.vocabulary.FOAF;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
 
 public class ModelBuilderExample {
-
+    /**
+     * Simple example, showing the use of the ModelBuilder class for defining triples. The model builder class can be
+     * used as an alternative way to the model API (SimpleModel.java)
+     */
     public static void main(String[] args) {
         // using the ModelBuilder, instead of the model api (SimpleModel.java)
         ModelBuilder builder = new ModelBuilder();

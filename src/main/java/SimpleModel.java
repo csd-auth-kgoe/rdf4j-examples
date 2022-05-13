@@ -22,6 +22,10 @@ import java.io.Writer;
 
 public class SimpleModel {
 
+    /**
+     * Simple example, showing: 1. The use of the Model API to define triples 2. The way to save a model in a file 3.
+     * The definition and execution of a sparql query
+     */
     public static void main(String[] args) throws IOException {
 
         // Create a new, empty Model object.

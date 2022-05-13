@@ -12,6 +12,10 @@ import java.io.IOException;
 
 public class GraphDBExample {
 
+    /**
+     * How to connect to a graphdb repository, load a file to a repository, add some data through the API and perform a
+     * sparql query
+     */
     public static void main(String[] args) {
 
         HTTPRepository repository = new HTTPRepository("http://localhost:7200/repositories/testrepo");
