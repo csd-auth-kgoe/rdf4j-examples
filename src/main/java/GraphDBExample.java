@@ -11,16 +11,20 @@ import org.eclipse.rdf4j.rio.RDFFormat;
 import java.io.IOException;
 
 public class GraphDBExample {
+
     public static void main(String[] args) {
 
         HTTPRepository repository = new HTTPRepository("http://localhost:7200/repositories/testrepo");
         RepositoryConnection connection = repository.getConnection();
 
+        // Clear the repository before we start
+        connection.clear();
+
         // load a simple ontology from a file
         connection.begin();
         // Adding the family ontology
         try {
-            connection.add(GraphDBExample.class.getResourceAsStream("/simple_ontology.ttl"), "urn:base",
+            connection.add(GraphDBExample.class.getResourceAsStream("/rdf_examples/simple_ontology.ttl"), "urn:base",
                     RDFFormat.TURTLE);
         } catch (IOException e) {
             e.printStackTrace();

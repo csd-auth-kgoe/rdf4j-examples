@@ -1,0 +1,34 @@
+
+<http://airport.example.com/data/00A> a <http://schema.org/Airport>;
+  <http://purl.org/dc/terms/type> "heliport";
+  <http://www.examples.org/airports#elevation> 11;
+  <http://www.examples.org/airports#municipality> "Bensalem";
+  <http://www.w3.org/2000/01/rdf-schema#label> "Total Rf Heliport";
+  <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/isIdentifiedBy> <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/US> .
+
+<http://airport.example.com/data/00AA> a <http://schema.org/Airport>;
+  <http://purl.org/dc/terms/type> "small_airport";
+  <http://www.examples.org/airports#elevation> 3435;
+  <http://www.examples.org/airports#municipality> "Leoti";
+  <http://www.w3.org/2000/01/rdf-schema#label> "Aero B Ranch Airport";
+  <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/isIdentifiedBy> <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/US> .
+
+<http://airport.example.com/data/DABT> a <http://schema.org/Airport>;
+  <http://purl.org/dc/terms/type> "medium_airport";
+  <http://www.examples.org/airports#elevation> 2697;
+  <http://www.examples.org/airports#municipality> "Batna";
+  <http://www.w3.org/2000/01/rdf-schema#label> "Batna Airport";
+  <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/isIdentifiedBy> <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/DZ> .
+
+<http://airport.example.com/data/DAF> a <http://schema.org/Airport>;
+  <http://purl.org/dc/terms/type> "small_airport";
+  <http://www.examples.org/airports#elevation> 280;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Daup Airport";
+  <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/isIdentifiedBy> <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/PG> .
+
+<http://airport.example.com/data/LGAV> a <http://schema.org/Airport>;
+  <http://purl.org/dc/terms/type> "large_airport";
+  <http://www.examples.org/airports#elevation> 308;
+  <http://www.examples.org/airports#municipality> "Athens";
+  <http://www.w3.org/2000/01/rdf-schema#label> "Eleftherios Venizelos International Airport";
+  <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/isIdentifiedBy> <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/GR> .

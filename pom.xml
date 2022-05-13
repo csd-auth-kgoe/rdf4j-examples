@@ -42,6 +42,14 @@
             <artifactId>graphdb-free-runtime</artifactId>
             <version>9.11.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>be.ugent.rml</groupId>
+            <artifactId>rmlmapper</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>

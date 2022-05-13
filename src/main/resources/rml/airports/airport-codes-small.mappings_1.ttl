@@ -1,0 +1,59 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix lcc-3166-1: <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/> .
+@prefix lcc-lr: <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/> .
+@prefix domain: <http://www.examples.org/airports#>.
+
+@base <http://airport.example.com/data/>.
+
+<#AirportMapping> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "airport-codes-small.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://airport.example.com/data/{ident}";
+    rr:class schema:Airport 
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dc:type;
+    rr:objectMap [
+      rml:reference "Type"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "Name";
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate domain:municipality;
+    rr:objectMap [
+      rml:reference "municipality";
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate domain:elevation;
+    rr:objectMap [
+      rml:reference "elevation_ft";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate lcc-lr:isIdentifiedBy;
+    rr:objectMap [
+      rr:template "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/{iso_country}";
+    ]
+  ].

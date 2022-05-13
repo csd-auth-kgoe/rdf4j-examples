@@ -1,0 +1,6 @@
+ident,type,name,elevation_ft,continent,iso_country,iso_region,municipality,gps_code,iata_code,local_code,coordinates
+00A,heliport,Total Rf Heliport,11,NA,US,US-PA,Bensalem,00A,,00A,"-74.93360137939453, 40.07080078125"
+00AA,small_airport,Aero B Ranch Airport,3435,NA,US,US-KS,Leoti,00AA,,00AA,"-101.473911, 38.704022"
+DABT,medium_airport,Batna Airport,2697,AF,DZ,DZ-05,Batna,DABT,BLJ,,"6.308589935300001, 35.752101898199996"
+DAF,small_airport,Daup Airport,280,OC,PG,PG-MPM,,,DAF,DAUP,"145.9515, -4.7403"
+LGAV,large_airport,Eleftherios Venizelos International Airport,308,EU,GR,GR-A1,Athens,LGAV,ATH,,"23.9444999695, 37.9364013672"

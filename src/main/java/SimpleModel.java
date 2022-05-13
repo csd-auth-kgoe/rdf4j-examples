@@ -61,7 +61,7 @@ public class SimpleModel {
 
         // Note that instead of writing to the screen using `System.out` you could also provide
         // a java.io.FileOutputStream or a java.io.FileWriter to save the model to a file
-        Writer output = new FileWriter("./src/main/resources/example1.ttl");
+        Writer output = new FileWriter("./src/main/resources/rdf_examples/example1.ttl");
         Rio.write(model, output, RDFFormat.TURTLE);
 
         //
