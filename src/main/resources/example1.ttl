@@ -1,0 +1,9 @@
+@prefix ex: <http://example.org/> .
+
+ex:George a ex:Artist;
+  ex:age "40"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://xmlns.com/foaf/0.1/firstName> "George" .
+
+ex:Picasso a ex:Artist;
+  ex:age "99"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://xmlns.com/foaf/0.1/firstName> "Pablo" .
