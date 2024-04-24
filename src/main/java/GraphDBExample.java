@@ -18,7 +18,7 @@ public class GraphDBExample {
      */
     public static void main(String[] args) {
 
-        HTTPRepository repository = new HTTPRepository("http://localhost:7200/repositories/testrepo");
+        HTTPRepository repository = new HTTPRepository("http://localhost:7200/repositories/dpv");
         RepositoryConnection connection = repository.getConnection();
 
         // Clear the repository before we start

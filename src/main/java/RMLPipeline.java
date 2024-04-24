@@ -39,7 +39,7 @@ public class RMLPipeline {
         //load data to graphdb
         //domain ontology
 
-        HTTPRepository repository = new HTTPRepository("http://localhost:7200/repositories/rmlpipeline");
+        HTTPRepository repository = new HTTPRepository("http://localhost:7200/repositories/dpv");
         RepositoryConnection connection = repository.getConnection();
 
         // Clear the repository before we start
