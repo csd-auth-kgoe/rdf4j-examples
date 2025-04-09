@@ -23,15 +23,8 @@ public class RMLPipeline {
     public static void main(String[] args) throws IOException {
         RMLPipeline pipeline = new RMLPipeline();
 
-        String rootFolder = "./src/main/resources/rml/";
-        String templateFile = "airports/airport-codes-small.mappings_1.ttl";
-        String outputFile = "airports/outputFile.ttl";
-
-        String mapPath = rootFolder + templateFile;
-        File mappingFile = new File(mapPath);
-
-        String outPath = rootFolder + outputFile;
-        Writer output = new FileWriter(outPath);
+        File mappingFile = new File("./src/main/resources/rml/airports/airport-codes-small.mappings_1.ttl");
+        Writer output = new FileWriter("./src/main/resources/rml/airports/outputFile.ttl");
 
         // run the RML Mapper
         pipeline.runRMLMapper(mappingFile, output);
