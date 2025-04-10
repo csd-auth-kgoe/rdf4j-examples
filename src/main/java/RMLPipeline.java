@@ -32,7 +32,8 @@ public class RMLPipeline {
         //load data to graphdb
         //domain ontology
 
-        HTTPRepository repository = new HTTPRepository("http://localhost:7200/repositories/dpv");
+        String repositoryName = "NAME";
+        HTTPRepository repository = new HTTPRepository("http://localhost:7200/repositories/" + repositoryName);
         RepositoryConnection connection = repository.getConnection();
 
         // Clear the repository before we start
