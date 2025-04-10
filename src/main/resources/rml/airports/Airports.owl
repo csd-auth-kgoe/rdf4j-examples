@@ -23,7 +23,7 @@
 
 ###  http://www.examples.org/airports#Airport
 :Airport rdf:type owl:Class ;
-         owl:equivalentClass <https://schema.org/Airport> ;
+         owl:equivalentClass <http://schema.org/Airport> ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty <http://purl.org/dc/elements/1.1/type> ;
                            owl:someValuesFrom xsd:string

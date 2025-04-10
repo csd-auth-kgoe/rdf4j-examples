@@ -42,10 +42,10 @@ public class RMLPipeline {
         connection.begin();
         // Adding the family ontology
         try {
-            connection.add(RMLPipeline.class.getResourceAsStream("/rml/airports/Airports.owl"),
+            connection.add(new FileInputStream("./src/main/resources/rml/airports/Airports.owl"),
                     "urn:base",
                     RDFFormat.TURTLE);
-            connection.add(GraphDBExample.class.getResourceAsStream("/rml/airports/outputFile.ttl"),
+            connection.add(new FileInputStream("./src/main/resources/rml/airports/outputFile.ttl"),
                     "urn:base",
                     RDFFormat.TURTLE);
         } catch (IOException e) {
