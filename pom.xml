@@ -46,7 +46,7 @@
         <dependency>
             <groupId>be.ugent.rml</groupId>
             <artifactId>rmlmapper</artifactId>
-            <version>5.0.0</version>
+            <version>8.1.0</version>
         </dependency>
 
 
