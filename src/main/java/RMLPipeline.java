@@ -9,12 +9,7 @@ import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.http.HTTPRepository;
 import org.eclipse.rdf4j.rio.RDFFormat;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 
 public class RMLPipeline {
 
@@ -86,7 +81,6 @@ public class RMLPipeline {
 
             // RecordsFactory resolves local input files referenced by the mapping
             RecordsFactory factory = new RecordsFactory(
-                    mappingFile.getParent(),
                     mappingFile.getParent()
             );
 
@@ -107,7 +101,7 @@ public class RMLPipeline {
                     .get(new NamedNode("rmlmapper://default.store"));
 
             // Write the result to a Turtle file
-            OutputStream output = new FileOutputStream(outputFile);
+            Writer output = new FileWriter(outputFile);
             result.write(output, "turtle");
             output.close();
 

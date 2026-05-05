@@ -39,14 +39,14 @@
         </dependency>
         <dependency>
             <groupId>com.ontotext.graphdb</groupId>
-            <artifactId>graphdb-free-runtime</artifactId>
-            <version>9.11.1</version>
+            <artifactId>graphdb-runtime</artifactId>
+            <version>10.8.13</version>   <!-- or latest -->
         </dependency>
 
         <dependency>
             <groupId>be.ugent.rml</groupId>
             <artifactId>rmlmapper</artifactId>
-            <version>8.1.0</version>
+            <version>6.5.1</version>
         </dependency>
 
 
